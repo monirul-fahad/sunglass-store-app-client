@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Wayfarer Sunglasses(Green)",
+      "price": 200,
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/fdQ8S3w/4.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Wayfarer Unisex Spectacle",
+      "price": 250,
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/KmXgD23/6.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rim Spectacle Frame",
+      "price": 180,
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/7NLTSxd/1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Square Men Sunglass",
+      "price": 150,
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/gWWtPGd/3.jpg"
+    },
+    {
+      "id": 5,
+      "name": "UV Protected Sports",
+      "price": 300,
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/f4ZVYBd/9.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Sunglass Ac010(Blue)",
+      "price": 220,
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/NKCkV1z/7.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Beach Aviator Glass",
+      "price": 199,
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/8cWGGq5/10.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Sunglass P117WH3",
+      "price": 210,
+      "description": "The best sunglasses brands on the market are ones that combine quality and style. Think: Ray-Ban, Oliver Peoples and Prada, just to name a few.",
+      "img": "https://i.ibb.co/XkKfMJs/2.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Round Flip Glass",
+      "price": 280,
+      "description": "Each of these top sunglasses brands produces first-rate sunglasses that highlight hallmark design, impeccable craftsmanship, durable materials and high-quality",
+      "img": "https://i.ibb.co/7kyzQrq/5.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Spring Hinges 7J1030",
+      "price": 240,
+      "description": "Sunglasses aren’t just a way to protect your eyes from the sun — they can be a personal fashion statement and a fun accessory that completes your outfit.",
+      "img": "https://i.ibb.co/3NXXhRd/8.jpg"
+    }
+  ]
