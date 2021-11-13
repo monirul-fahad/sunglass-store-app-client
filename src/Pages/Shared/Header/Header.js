@@ -48,7 +48,7 @@ const Header = () => {
                   </Nav.Link>
                   <Nav.Link
                     onClick={logOut}
-                    className="active ms-lg-5 p-1 px-4 btn btn-danger text-black border-box"
+                    className="active ms-lg-5 p-1 px-4 btn btn-danger text-white border-box"
                   >
                     Logout
                   </Nav.Link>

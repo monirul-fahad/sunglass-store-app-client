@@ -1,41 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 import "./Sidebar.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGripHorizontal,
-  faSignOutAlt,
-  faPlus,
-  faUserPlus,
-  faList,
-} from "@fortawesome/free-solid-svg-icons";
-
 const Sidebar = () => {
   const { logOut, user } = useAuth();
   const [admin, setAdmin] = useState(false);
-  //   const [isAdmin, setIsAdmin] = useState([]);
-
-  //   useEffect(() => {
-  //     fetch("https://mighty-eyrie-38405.herokuapp.com/isAdmin")
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         const found = data.find(
-  //           (element) => element.email === loggedInUser.email
-  //         );
-  //         // console.log(found);
-  //         setIsAdmin(found);
-  //       });
-  //   }, []);
-
-  //   // console.log("isAdmin", isAdmin);
-  //   const isVerifyAdmin =
-  //     loggedInUser.isLoggedIn == true &&
-  //     isAdmin !== undefined &&
-  //     isAdmin.email == loggedInUser.email;
-  //   // console.log(isVerifyAdmin);
 
   useEffect(() => {
     fetch(`http://localhost:5000/users/${user.email}`)

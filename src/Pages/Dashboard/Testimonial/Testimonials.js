@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Spinner } from "react-bootstrap";
 import Testimonial from "./Testimonial";
+import "./Testimonial.css";
 
 const Testimonials = () => {
   const [reviews, setReviews] = useState([]);
@@ -12,7 +13,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div>
+    <div className="testimonial">
       <Container>
         <h3 className="text-center py-5">Testimonials</h3>
         <div className="row">
