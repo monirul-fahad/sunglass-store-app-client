@@ -4,11 +4,30 @@ import Sidebar from "../../Sidebar/Sidebar";
 
 const ManageAllOrders = () => {
   const [orders, setOrders] = useState([]);
+
   useEffect(() => {
     fetch("http://localhost:5000/orders")
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, []);
+
+  const handleDelete = (id) => {
+    const url = `http://localhost:5000/orders/${id}`;
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.modifiedCount) {
+          alert("shipment Successful");
+        }
+        window.location.reload();
+      });
+  };
+
   return (
     <div className="row">
       <Sidebar></Sidebar>
@@ -24,6 +43,7 @@ const ManageAllOrders = () => {
               <th>Email</th>
               <th>Product</th>
               <th>Status</th>
+              <th>Update</th>
             </tr>
           </thead>
 
@@ -33,7 +53,21 @@ const ManageAllOrders = () => {
                 <td>{order.name}</td>
                 <td>{order.email}</td>
                 <td>{order.item.name}</td>
-                <td></td>
+                <td>{order.status}</td>
+                <td>
+                  {" "}
+                  {order.status === "pending" ? (
+                    <button
+                      onClick={() => handleDelete(order._id)}
+                      className="btn btn-warning"
+                    >
+                      Update
+                    </button>
+                  ) : (
+                    // <button className="btn btn-success">ship</button>
+                    <button></button>
+                  )}
+                </td>
               </tr>
             </tbody>
           ))}

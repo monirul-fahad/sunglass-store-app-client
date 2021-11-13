@@ -21,6 +21,7 @@ const ProductDetails = () => {
   const onSubmit = (data) => {
     const productDetails = product;
     data.item = productDetails;
+    data.status = "pending";
     axios.post("http://localhost:5000/orders", data).then((res) => {
       if (res.data.insertedId) {
         alert("Order Placed successfully");
