@@ -44,7 +44,7 @@ const ProductDetails = () => {
         {!isLoading && (
           <div className="row">
             <div className="col-md-5">
-              <div className="card">
+              <div className="card text-start">
                 <img
                   src={product.img}
                   className="card-img-top order-img"
@@ -52,7 +52,7 @@ const ProductDetails = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{product.name}</h5>
-                  <h6 className="card-title">{product.price}</h6>
+                  <h6 className="card-title">${product.price}</h6>
                   <p className="card-text">{product.description}</p>
                 </div>
               </div>
