@@ -22,9 +22,9 @@ const ManageAllOrders = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
-          alert("shipment Successful");
+          alert("Status Updated Successful");
         }
-        // window.location.reload();
+        window.location.reload();
       });
   };
 

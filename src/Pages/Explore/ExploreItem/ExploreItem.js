@@ -5,7 +5,7 @@ const ExploreItem = (props) => {
   const { _id, name, description, img, price } = props.product;
   return (
     <div className="">
-      <div className="col  mb-3">
+      <div className="col mx-2 mb-5">
         <div className="card  shadow rounded  border-0 h-100">
           <img src={img} className="card-img-top" alt="..." />
           <div className="card-body text-start">

@@ -6,9 +6,7 @@ import Register from "./Pages/Login/Register/Register";
 import NotFound from "./Pages/NotFound/NotFound";
 import Explore from "./Pages/Explore/Explore/Explore";
 import AuthProvider from "./context/AuthProvider/AuthProvider";
-import Products from "./Pages/Home/Products/Products/Products";
 import ProductDetails from "./Pages/ProductDetails/ProductDetails";
-// import AddProduct from "./Pages/AddProduct/AddProduct";
 import PrivateRoute from "./Pages/Login/Login/PrivateRoute/PrivateRoute";
 import Sidebar from "./Pages/Sidebar/Sidebar";
 import ManageAllOrders from "./Pages/Dashboard/ManageAllOrders/ManageAllOrders";
@@ -34,36 +32,36 @@ function App() {
             <Route path="/explore">
               <Explore></Explore>
             </Route>
-            <Route path="/addProduct">
+            <PrivateRoute path="/addProduct">
               <AddProduct></AddProduct>
-            </Route>
-            <Route path="/manageProduct">
+            </PrivateRoute>
+            <PrivateRoute path="/manageProduct">
               <ManageProduct></ManageProduct>
-            </Route>
-            <Route path="/manageOrder">
+            </PrivateRoute>
+            <PrivateRoute path="/manageOrder">
               <ManageAllOrders></ManageAllOrders>
-            </Route>
-            <Route path="/makeAdmin">
+            </PrivateRoute>
+            <PrivateRoute path="/makeAdmin">
               <MakeAdmin></MakeAdmin>
-            </Route>
-            <Route path="/myOrders">
+            </PrivateRoute>
+            <PrivateRoute path="/myOrders">
               <MyOrders></MyOrders>
-            </Route>
-            <Route path="/payment">
+            </PrivateRoute>
+            <PrivateRoute path="/payment">
               <Payment></Payment>
-            </Route>
-            <Route path="/review">
+            </PrivateRoute>
+            <PrivateRoute path="/review">
               <Reviews></Reviews>
-            </Route>
+            </PrivateRoute>
             <PrivateRoute path="/productDetails/:productId">
               <ProductDetails></ProductDetails>
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/dashboard">
+            <PrivateRoute path="/dashboard">
               <Sidebar></Sidebar>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/register">
               <Register></Register>
