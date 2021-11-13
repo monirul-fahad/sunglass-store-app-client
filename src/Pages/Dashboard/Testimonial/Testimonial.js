@@ -6,14 +6,28 @@ const Testimonial = ({ review }) => {
     <div className="col-md-6 col-lg-4">
       <div
         style={{ backgroundColor: "white" }}
-        className="testimonial-card p-4 rounded mb-5 mx-3"
+        className="testimonial-card p-4 rounded mb-5 mx-3 text-start"
       >
-        <div>
-          <h3>{review.productName}</h3>
-          <p>Review by: {review.name}</p>
-        </div>
-
+        <h3> {review.name}</h3>
+        <p>Product: {review.productName}</p>
         <p>{review.description} </p>
+        <ul>
+          <li>
+            <i class="fas fa-star">f</i>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+          </li>
+          <li>
+            <i class="fas fa-star"></i>
+          </li>
+        </ul>
       </div>
     </div>
   );

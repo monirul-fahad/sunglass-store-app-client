@@ -15,7 +15,7 @@ const Testimonials = () => {
   return (
     <div className="testimonial">
       <Container>
-        <h3 className="text-center py-5">Testimonials</h3>
+        <h1 className="text-center py-5">Testimonials</h1>
         <div className="row">
           {reviews.map((review) => (
             <Testimonial review={review} key={review._id}></Testimonial>

@@ -1,6 +1,6 @@
 # The project name is GALSSY YARD.
 
-This Is The Live Link of the Project. [Create React App](https://github.com/facebook/create-react-app).
+This Is The Live Link of the Project. [Glassy Yard App](https://github.com/facebook/create-react-app).
 
 ## Description Of The Project.
 

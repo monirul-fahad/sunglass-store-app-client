@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
+import "./Products.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -10,10 +11,10 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
   return (
-    <div className="py-5 events-container">
+    <div className="py-5 glass-container">
       <div className="py-5 container ">
         <div className="mb-5">
-          <h3>Available Glasses</h3>
+          <h1>Available Glasses</h1>
         </div>
         <div className="row row-cols-1 row-cols-md-3">
           {products.slice(0, 6).map((product) => (

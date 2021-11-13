@@ -10,7 +10,6 @@ const Header = () => {
     <>
       <Navbar
         style={{ position: "absolute", left: 0, top: 0, right: 0, zIndex: 3 }}
-        bg="transparent"
         expand="lg"
         className="header-nav"
       >
@@ -33,7 +32,7 @@ const Header = () => {
                 Explore
               </Nav.Link>
               <Nav.Link className=" fw-bold text-black" as={Link} to="#">
-                Products
+                About
               </Nav.Link>
               <Nav.Link className=" fw-bold text-black" as={Link} to="#">
                 Contact

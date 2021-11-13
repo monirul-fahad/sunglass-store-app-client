@@ -8,3 +8,15 @@
   background-position: center center;
   height: 100vh;
 }
+
+.text-color {
+  color: rgb(39, 22, 22);
+}
+
+.text2-color {
+  color: rgb(228, 252, 10);
+}
+
+.highlight-text {
+  color: rgb(247, 184, 10);
+}
