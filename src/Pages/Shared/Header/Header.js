@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import "./Header.css";
 
 const Header = () => {
   const { user, isLoading, logOut } = useAuth();
@@ -11,6 +12,7 @@ const Header = () => {
         style={{ position: "absolute", left: 0, top: 0, right: 0, zIndex: 3 }}
         bg="transparent"
         expand="lg"
+        className="header-nav"
       >
         <Container>
           <Navbar.Brand
