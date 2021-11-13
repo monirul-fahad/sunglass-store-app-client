@@ -11,7 +11,7 @@ const ManageAllOrders = () => {
       .then((data) => setOrders(data));
   }, []);
 
-  const handleDelete = (id) => {
+  const handleUpdate = (id) => {
     const url = `http://localhost:5000/orders/${id}`;
     fetch(url, {
       method: "PUT",
@@ -24,8 +24,25 @@ const ManageAllOrders = () => {
         if (data.modifiedCount) {
           alert("shipment Successful");
         }
-        window.location.reload();
+        // window.location.reload();
       });
+  };
+
+  const handleDelete = (id) => {
+    // eslint-disable-next-line no-restricted-globals
+    if (confirm("You are deleting an ordered Product!!")) {
+      const url = `http://localhost:5000/orders/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.deletedCount) {
+            const remaining = orders.filter((event) => event._id !== id);
+            setOrders(remaining);
+          }
+        });
+    }
   };
 
   return (
@@ -43,7 +60,8 @@ const ManageAllOrders = () => {
               <th>Email</th>
               <th>Product</th>
               <th>Status</th>
-              <th>Update</th>
+              <th>Update Status</th>
+              <th>Delete</th>
             </tr>
           </thead>
 
@@ -58,15 +76,23 @@ const ManageAllOrders = () => {
                   {" "}
                   {order.status === "pending" ? (
                     <button
-                      onClick={() => handleDelete(order._id)}
+                      onClick={() => handleUpdate(order._id)}
                       className="btn btn-warning"
                     >
                       Update
                     </button>
                   ) : (
                     // <button className="btn btn-success">ship</button>
-                    <button></button>
+                    "Updated"
                   )}
+                </td>
+                <td>
+                  <button
+                    className="btn btn-danger"
+                    onClick={() => handleDelete(order._id)}
+                  >
+                    Cancel
+                  </button>
                 </td>
               </tr>
             </tbody>

@@ -57,7 +57,7 @@ const MyOrders = () => {
                 <tr>
                   <td>{order.item.name}</td>
                   <td>${order.item.price}</td>
-                  <td></td>
+                  <td>{order.status}</td>
                   <td>
                     {" "}
                     <button
