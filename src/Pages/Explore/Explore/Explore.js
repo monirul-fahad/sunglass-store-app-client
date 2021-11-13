@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import ExploreItem from "../ExploreItem/ExploreItem";
 import "./Explore.css";
@@ -7,7 +8,7 @@ const Explore = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://fierce-sea-69745.herokuapp.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -24,6 +25,7 @@ const Explore = () => {
           ))}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

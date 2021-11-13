@@ -22,15 +22,17 @@ const ProductDetails = () => {
     const productDetails = product;
     data.item = productDetails;
     data.status = "pending";
-    axios.post("http://localhost:5000/orders", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Order Placed successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://fierce-sea-69745.herokuapp.com/orders", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Order Placed successfully");
+          reset();
+        }
+      });
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${productId}`)
+    fetch(`https://fierce-sea-69745.herokuapp.com/products/${productId}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
