@@ -20,23 +20,35 @@ const Sidebar = () => {
       style={{ height: "100vh" }}
     >
       <ul className="list-unstyled li-style">
-        <Link className="glassy" to="/">
-          <h3>Glassy</h3>
+        <Link style={{ textDecoration: "none" }} to="/">
+          <h2 className="glassy">Glassy</h2>
         </Link>
         {!admin && (
           <>
             <li>
-              <Link to="/myOrders" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/myOrders"
+                className="text-white"
+              >
                 <span>Order List</span>
               </Link>
             </li>
             <li>
-              <Link to="/payment" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/payment"
+                className="text-white"
+              >
                 <span>Payment</span>
               </Link>
             </li>
             <li>
-              <Link to="/review" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/review"
+                className="text-white"
+              >
                 <span>Review</span>
               </Link>
             </li>
@@ -46,22 +58,38 @@ const Sidebar = () => {
         {admin && (
           <>
             <li>
-              <Link to="/manageOrder" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/manageOrder"
+                className="text-white"
+              >
                 <span>Manage Order</span>
               </Link>
             </li>
             <li>
-              <Link to="/manageProduct" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/manageProduct"
+                className="text-white"
+              >
                 <span>Manage Product</span>
               </Link>
             </li>
             <li>
-              <Link to="/addProduct" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/addProduct"
+                className="text-white"
+              >
                 <span>Add Product</span>
               </Link>
             </li>
             <li>
-              <Link to="/makeAdmin" className="text-white">
+              <Link
+                style={{ textDecoration: "none" }}
+                to="/makeAdmin"
+                className="text-white"
+              >
                 <span>Make Admin</span>
               </Link>
             </li>

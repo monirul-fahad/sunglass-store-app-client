@@ -52,7 +52,7 @@ const ManageAllOrders = () => {
         className="pt-4 col-md-10 add-product"
         style={{ position: "absolute", right: "0", background: "white" }}
       >
-        <h2>This is Manage all order page</h2>
+        <h2>Manage User's Orders</h2>
         <Table striped bordered hover className="p-3 shadow">
           <thead>
             <tr>

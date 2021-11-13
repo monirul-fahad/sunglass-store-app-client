@@ -39,6 +39,7 @@ const MyOrders = () => {
         className="pt-4 col-md-10 add-product"
         style={{ position: "absolute", right: "0", background: "white" }}
       >
+        <h2>Your Ordered Products</h2>
         {userOrders.length === 0 ? (
           <h3>You Haven't Ordered Any Product yet.</h3>
         ) : (

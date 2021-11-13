@@ -14,7 +14,7 @@ const Products = () => {
     <div className="py-5 glass-container">
       <div className="py-5 container ">
         <div className="mb-5">
-          <h1>Available Glasses</h1>
+          <h1>Featured Glasses</h1>
         </div>
         <div className="row row-cols-1 row-cols-md-3">
           {products.slice(0, 6).map((product) => (

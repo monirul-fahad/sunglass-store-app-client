@@ -1,5 +1,6 @@
 import React from "react";
 import "./Testimonial.css";
+import Rating from "react-rating";
 
 const Testimonial = ({ review }) => {
   return (
@@ -11,23 +12,12 @@ const Testimonial = ({ review }) => {
         <h3> {review.name}</h3>
         <p>Product: {review.productName}</p>
         <p>{review.description} </p>
-        <ul>
-          <li>
-            <i class="fas fa-star">f</i>
-          </li>
-          <li>
-            <i class="fas fa-star"></i>
-          </li>
-          <li>
-            <i class="fas fa-star"></i>
-          </li>
-          <li>
-            <i class="fas fa-star"></i>
-          </li>
-          <li>
-            <i class="fas fa-star"></i>
-          </li>
-        </ul>
+        <Rating
+          initialRating={parseInt(review.rating)}
+          emptySymbol="far fa-star icon-color"
+          fullSymbol="fas fa-star icon-color"
+          readonly
+        ></Rating>
       </div>
     </div>
   );

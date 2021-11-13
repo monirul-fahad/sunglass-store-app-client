@@ -22,9 +22,9 @@ const Contact = () => {
               </div>
               <div className="col-md-9">
                 <p>
-                  <strong>Office location –</strong> our office consists of
-                  three buildings and is located in the heart of the city. You
-                  can easily reach us by metro or by land transport.
+                  <strong>Office location –</strong> our shops are located in
+                  the heart of the city. You can easily reach us by metro or by
+                  land transport.
                 </p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../Shared/Header/Header";
 import ExploreItem from "../ExploreItem/ExploreItem";
+import "./Explore.css";
 
 const Explore = () => {
   const [products, setProducts] = useState([]);
@@ -14,8 +15,8 @@ const Explore = () => {
     <>
       <Header></Header>
       <div className="py-5 mt-5 container ">
-        <div className="mb-5">
-          <h3>Available All Glasses</h3>
+        <div className="mb-5 all-glass">
+          <h1>Available All Glasses</h1>
         </div>
         <div className="row row-cols-1 row-cols-md-3">
           {products.map((product) => (
