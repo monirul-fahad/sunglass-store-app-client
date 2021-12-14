@@ -14,7 +14,10 @@ const Banner = () => {
             <p className="fs-5 fw-bold text-color mb-4">
               Sunglass improves personality and smartness. But You need perfect
               glass to match with you. We've thousands of stylist sunglasses in
-              our collection. Choose your glass and be smart.
+              our collection. Choose your glass and be smart. Sunglass improves
+              personality and smartness. But You need perfect glass to match
+              with you. We've thousands of stylist sunglasses in our collection.
+              Choose your glass and be smart.
             </p>
             <h2 className="fs-3 fw-bold text2-color mb-3">
               50% OFF ON RETROGLASSES
